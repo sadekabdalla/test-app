@@ -1,0 +1,36 @@
+.banners{
+    padding: 20px 30px;
+    width: 100%;
+}
+.banners .contaner{
+    max-width: 100%;
+    display: flex;
+}
+.banners .contaner .left-box{
+    /* width: 24%; */
+}
+.banners .contaner .left-box .box{
+    margin-top: 10px;
+}
+.banners .contaner .right-box{
+    /* width: 75%; */
+}
+.banners .contaner .right-box .top{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.banners .contaner .right-box .bottom{
+    max-width: 999px;
+    margin-top: 10px;
+}
+.banners .contaner .right-box .bottom img{
+    width: 840px;
+    object-fit: cover;
+}
+@media (max-width:420px) {
+    .banners{
+        display: none;
+    }
+}

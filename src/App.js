@@ -1,25 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav1 from "./Components/Nav/Nav1"
+import {BrowserRouter} from "react-router-dom"
+import Rout from "./Components/Rout"
+import Footer from "./Components/Footer/Footer"
+import Product from "./Components/Product"
+import { useState } from "react"
+import Nav2 from "./Components/Nav/Nav2"
 
-function App() {
+const App = () => {
+  // add To Cart
+  const [cart , setCart] = useState([])
+  const [shop,setShop] = useState(Product)
+  // shop search fillter 
+  const [search ,setSearch] = useState('')
+  // categories filter
+  const Filter = ((x)=>{
+    const cateFilter = Product.filter((Product)=>{
+      return Product.cat === x
+    })
+    setShop(cateFilter)
+  })
+  //all categories fillter
+  const allCateFilter = () => {
+    setShop(Product)
+  }
+  // shop search fillter
+  const searchProduct = () => {
+    const searchFilter = Product.filter((x)=>{
+      return x.cat === search
+    })
+    setShop(searchFilter)
+  }
+  //Add To Cart 
+  const addToCart = (product) => {
+    const exist = cart.find((x)=>{
+      return x.id === product.id
+    })
+    if (exist)
+      {
+        alert('this product is already added in cart')
+      }
+      else{
+        setCart([...cart,{...product,qty:1}])
+        alert('added to cart')
+      }
+  }
+  console.log(cart)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Nav1 search={search} setSearch={setSearch} searchProduct={searchProduct} />
+      <Nav2/>
+      <Rout cart={cart} setCart={setCart} shop={shop} Filter={Filter} allCateFilter={allCateFilter} addToCart={addToCart} />
+      <Footer/>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,74 @@
+.last-nav{
+    max-width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    background: #232323;
+    /* justify-content: space-between; */
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}  
+.last-nav .user-profile{
+    display: flex;
+    margin-top: 10px;
+}
+.last-nav .user-profile .icon{
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+.last-nav .user-profile .info{
+    margin-left: 10px;
+    color:#fff;
+}
+.last-nav .user-profile .info h2{
+    color: #fff;
+    font-size: 18px;
+}
+.last-nav .user-profile .info p{
+    color: #ababab;
+    font-size: 14px;
+}
+.last-nav .nav-link{
+    margin-top: 20px;
+}
+.last-nav .nav-link ul{
+    display: flex;
+}
+.last-nav .nav-link ul li .link{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.last-nav .nav-link ul li .link:hover{
+    color: #fed700;
+}
+.last-nav .offer{
+    margin-right: 30px;
+    padding: 5px 20px;
+    background: #fed700;
+    border-radius: 10px;
+}
+.last-nav .offer p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232323;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media (max-width:420px) {
+    .last-nav .nav-link ul li .link{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .last-nav .nav-link ul{
+        margin-top: 33px;
+        margin-left: -30px;
+    }
+    .last-nav .offer{
+        display: none;
+    }
+}

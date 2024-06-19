@@ -1,0 +1,78 @@
+.product-type{
+    padding: 20px 30px;
+    width: 100%;
+}
+.product-type .contaner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-type .contaner .box{
+    width: 360px;
+    height: 610px;
+    border: 4px solid #f6f7f8;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.product-type .contaner .box .header{
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    background: #f6f6f6;
+}
+.product-type .contaner .box .header h2{
+    color: #232323;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.product-type .contaner .box .productbox{
+    width: 100%;
+    height: 130px;
+    padding: 10px 10px;
+    border: 1px solid #f6f7f8;
+    display: flex;
+    margin-bottom: 5px;
+}
+.product-type .contaner .box .productbox .img-box img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.product-type .contaner .box .productbox .detail{
+    margin-left: 30px;
+}
+.product-type .contaner .box .productbox .detail h3{
+    font-size: 14px;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.product-type .contaner .box .productbox .detail p{
+    color: #cd1ecd;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.product-type .contaner .box .productbox .detail .icon{
+    display: flex;
+}
+.product-type .contaner .box .productbox .detail .icon button{
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border: 2px solid #f6f7f8;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: #a8a8a8;
+}
+.product-type .contaner .box .productbox .detail .icon button:hover{
+    background: #f6f6f6;
+    color: #232323;
+}
+@media (max-width:420px) {
+    .product-type .contaner .box{
+        margin-top: 15px;
+    }
+}

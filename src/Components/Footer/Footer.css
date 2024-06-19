@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.footer{
+    width: 100%;
+    padding: 30px 40px;
+    background: #f6f6f6;
+}
+.footer .contaner{
+    display: flex;
+    max-width: 100%;
+}
+.footer .contaner .left-box{
+    padding: 10px 10px;
+    border-right: 2px solid #d49191;
+}
+.footer .contaner .left-box .box{
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+.footer .contaner .left-box .box .icon-box{
+    font-size: 26px;
+    color: #cd1e67;
+}
+.footer .contaner .left-box .box .detail{
+    margin-left: 10px;
+}
+.footer .contaner .left-box .box .detail h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #cd1e67;
+    letter-spacing: 1px;
+}
+.footer .contaner .left-box .box .detail p{
+    font-size: 14px;
+    color: #232323;
+}
+.footer .contaner .right-box{
+    padding: 10px 20px;
+    
+}
+.footer .contaner .right-box .header{
+    max-width: 100%;
+    align-items: center;
+}
+.footer .contaner .right-box .header img{
+    margin-left: 40%;
+}
+.footer .contaner .right-box .header p{
+    margin: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #8a8a8a;
+    font-weight: 600;
+}
+.footer .contaner .right-box .bottom{
+    padding: 20px 20px;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .contaner .right-box .bottom .box{
+    padding: 10px 20px;
+}
+.footer .contaner .right-box .bottom h3{
+    text-transform: uppercase;
+    color: #232323;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.footer .contaner .right-box .bottom ul{
+    margin-top: 10px;
+}
+.footer .contaner .right-box .bottom ul li{
+    list-style: none;
+    margin-top: 5px;
+    color: #8a8a8a;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: -20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .contaner .right-box .bottom ul li:hover{
+    color: #cd1e67;
+}
+@media (max-width:420px) {
+    .footer .contaner .left-box{
+        width: 300px;
+    }
+    .footer .contaner .right-box{
+        display: none;
+    }
+}

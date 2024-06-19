@@ -1,0 +1,35 @@
+.contac {
+    /* margin-left: 45%; */
+    margin-bottom: 10px;
+}
+@media (max-width:420px) {
+    .cotainer h3{
+        width: 350px;
+        margin-left: 20px;
+    }
+    .cotainer p{
+        width: 350px;
+        padding: 5px;
+        margin-left: 20px;
+    } 
+    .cotainer button{
+        margin-left: 20%;
+        width: 230px;
+    }
+    .info .card{
+        width: 200px;
+    }
+    .info .card p{
+        margin-left: -8px;
+    }
+}
+.info{
+    display: flex;
+}
+
+.info .card {
+    width: 320px;
+}
+.cotainer .btn{
+    margin-left: 40%;
+}

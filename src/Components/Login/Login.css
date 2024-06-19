@@ -1,0 +1,42 @@
+.login {
+    width: 600px ;
+      height: 600px;
+      margin: 1px auto;
+      top: 100px ;
+      left: 700px ;
+      background: #f6f7f8;
+      box-shadow: rgba(220, 194, 194, 0.24) 0px 3px 8px;
+      border: 1px solid #f6f6f6;
+      border-radius: 5px;
+      padding: 20px 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .login .login-cont{
+    margin-right: 5px;
+  }
+  
+  
+  .login .login-cont input{
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #181c21;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    
+  }
+  @media (max-width:420px) {
+    .login {
+        width: 300px ;
+        height: 600px;
+        position: fixed;
+        top: 200px ;
+        left: 50px ;
+        background: #f6f7f8;
+        box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+        border: 1px solid #f6f6f6;
+        border-radius: 5px;
+        padding: 20px 30px;
+    }
+  }

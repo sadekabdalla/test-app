@@ -1,0 +1,14 @@
+.register{
+    width: 600px ;
+    height: 670px;
+    margin: 1px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    top: 100px ;
+    left: 700px ;
+    background: #f6f7f8;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    border: 1px solid #f6f6f6;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
